@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -5,9 +8,9 @@ export default function LandingPage() {
       <header className="w-full bg-blue-600 p-4">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold text-white">FreshHarvest Co.</h1>
-          <button className="bg-white text-blue-600 px-4 py-2 rounded hover:bg-blue-100">
+          <Link to="/login" className="bg-white text-blue-600 px-4 py-2 rounded hover:bg-blue-100">
             Login
-          </button>
+          </Link>
         </div>
       </header>
 
@@ -24,9 +27,8 @@ export default function LandingPage() {
           />
         </div>
         <p className="text-xl text-center text-blue-600 max-w-2xl mb-8">
-          Discover our wide range of fresh, locally-sourced produce and dairy
-          products. From crisp vegetables to creamy artisanal cheeses, we bring
-          nature's best to your table.
+          Discover our wide range of fresh, locally-sourced produce and dairy products. 
+          From crisp vegetables to creamy artisanal cheeses, we bring nature's best to your table.
         </p>
         <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg">
           Explore Our Products
@@ -40,5 +42,6 @@ export default function LandingPage() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
+
